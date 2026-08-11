@@ -1,1 +1,144 @@
+/*
+  style.css for nezih's personal site.
 
+  this file is intentionally simple. if you want to change something,
+  search for the relevant comment below and edit the values directly.
+  everything here is plain CSS, no build step, no preprocessor.
+*/
+
+/* ---- basic page setup ---- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf9f6; /* slightly off-white, easier on the eyes than pure white */
+  color: #1a1a1a;
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---- the content column ----
+   this is the single most important rule on the page: it keeps text
+   from stretching edge-to-edge on wide screens, and adds breathing
+   room on narrow ones. */
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 20px 80px 20px;
+}
+
+/* ---- header / intro ---- */
+
+header h1 {
+  font-size: 1.6em;
+  font-weight: normal;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.01em;
+}
+
+.tagline {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+/* ---- nav ----
+   a single line of links, no menu, no icons */
+
+.nav {
+  margin: 20px 0;
+  font-size: 0.95em;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---- horizontal rules between sections ---- */
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 28px 0;
+}
+
+/* ---- section headings ---- */
+
+h2 {
+  font-size: 1.15em;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+}
+
+/* ---- links ----
+   plain, classic, underlined blue links. no button styling anywhere. */
+
+a {
+  color: #1a54c4;
+}
+
+a:visited {
+  color: #55308d;
+}
+
+.links a {
+  font-weight: normal;
+}
+
+/* ---- lists ----
+   default browser list styling is fine, just tuned for spacing */
+
+ul, ol {
+  padding-left: 1.3em;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- paragraphs ---- */
+
+p {
+  margin: 0 0 12px 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- footer ---- */
+
+footer {
+  margin-top: 48px;
+  font-size: 0.85em;
+  color: #777;
+}
+
+/* ---- small screens ----
+   the .wrap padding already handles most of this, but tighten things
+   up a bit further on very narrow phones. */
+
+@media (max-width: 480px) {
+  body {
+    font-size: 17px;
+  }
+
+  .wrap {
+    padding: 32px 16px 60px 16px;
+  }
+}
