@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>nezih can dikme</title>
-  <meta name="description" content="nezih can dikme's personal website.">
+  <meta name="description" content="nezih can dikme: robert college student working on computational biology and machine learning.">
+  <link rel="canonical" href="https://nezihcandikme.github.io/">
+  <meta property="og:title" content="nezih can dikme">
+  <meta property="og:description" content="robert college student working on computational biology and machine learning.">
+  <meta property="og:url" content="https://nezihcandikme.github.io/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,6 +28,7 @@
       <a href="#currently">currently</a> ·
       <a href="#projects">projects</a> ·
       <a href="#research">research</a> ·
+      <a href="blog/">writing</a> ·
       <a href="#contact">contact</a>
     </nav>
 
@@ -30,12 +37,11 @@
     <section id="intro">
       <p>
         student at robert college. i like computational biology, machine learning,
-        robotics, mathematics, and building things before i fully know how to build them.
+        and building things before i fully know how to build them.
       </p>
 
       <p class="links">
         <a href="https://github.com/nezihcandikme" target="_blank" rel="noopener">github</a> ·
-        <a href="https://www.kaggle.com/nezihcandikme" target="_blank" rel="noopener">kaggle</a> ·
         <a href="mailto:nezihcandikme@gmail.com">nezihcandikme@gmail.com</a>
       </p>
     </section>
@@ -46,10 +52,9 @@
       <h2>currently</h2>
 
       <ul>
-        <li>building <a href="https://github.com/nezihcandikme/VisionGrip" target="_blank" rel="noopener">visiongrip</a>, a multiview perception system for prosthetic-hand grasping</li>
         <li>working as a scientific collaborator with firalis on computational and biomedical research</li>
-        <li>building a biology analysis platform for reproducible scientific workflows</li>
-        <li>studying biology olympiad, algorithms, data science, and applied mathematics</li>
+        <li>using <a href="https://github.com/nezihcandikme/DeConcord" target="_blank" rel="noopener">deconcord</a> to test how much alzheimer's rna-seq findings depend on the analysis tool</li>
+        <li>learning machine learning from first principles by building a small gpt from scratch (notes in <a href="blog/">writing</a>)</li>
       </ul>
     </section>
 
@@ -58,23 +63,19 @@
     <section id="projects">
       <h2>projects</h2>
 
-      <ol>
+      <ul>
         <li>
-          <strong>visiongrip</strong> — multiview computer vision and hardware integration for prosthetic-hand grasping.<br>
-          <a href="https://github.com/nezihcandikme/VisionGrip" target="_blank" rel="noopener">github</a>
-        </li>
-
-        <li>
-          <strong>biology analysis platform</strong> — tooling for structured, reproducible biological data-analysis workflows.<br>
-          <a href="https://github.com/nezihcandikme/biology-analysis-platform" target="_blank" rel="noopener">github</a>
-        </li>
-
-        <li>
-          <strong>deconcord</strong> — robustness and concordance analysis for RNA-seq differential expression.<br>
+          <strong>deconcord</strong>: a python tool that checks whether rna-seq differential-expression
+          results stay the same when you change the analysis tool, the significance threshold or the samples.<br>
           <a href="https://nezihcandikme.github.io/DeConcord/" target="_blank" rel="noopener">website</a> ·
           <a href="https://github.com/nezihcandikme/DeConcord" target="_blank" rel="noopener">github</a>
         </li>
-      </ol>
+        <li>
+          <strong>tiny gpt</strong>: a small character-level language model built from scratch, to learn
+          how transformers really work.<br>
+          <span class="note">in progress, write-up coming soon</span>
+        </li>
+      </ul>
     </section>
 
     <hr>
@@ -84,13 +85,25 @@
 
       <p>
         i am a scientific collaborator with firalis and am interested in computational biology,
-        biomedical data analysis, machine learning, and computer vision for real-world scientific
+        biomedical data analysis, and machine learning for real-world scientific
         and medical problems.
       </p>
 
       <p>
         i am especially interested in work that connects software, biological data, and
         experimentally meaningful questions.
+      </p>
+    </section>
+
+    <hr>
+
+    <section id="writing">
+      <h2>writing</h2>
+
+      <p>
+        notes on what i'm learning and building. start with
+        <a href="blog/learning-to-actually-code.html">learning to actually code</a>,
+        or see <a href="blog/">all posts</a>.
       </p>
     </section>
 
@@ -103,14 +116,12 @@
         reach me at
         <a href="mailto:nezihcandikme@gmail.com">nezihcandikme@gmail.com</a>,
         or find me on
-        <a href="https://github.com/nezihcandikme" target="_blank" rel="noopener">github</a>
-        or
-        <a href="https://www.kaggle.com/nezihcandikme" target="_blank" rel="noopener">kaggle</a>.
+        <a href="https://github.com/nezihcandikme" target="_blank" rel="noopener">github</a>.
       </p>
     </section>
 
     <footer>
-      <p>last updated october 2026 · built with html and css</p>
+      <p>last updated november 2026 · built with html and css</p>
     </footer>
 
   </div>
