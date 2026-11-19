@@ -142,3 +142,30 @@ footer {
     padding: 32px 16px 60px 16px;
   }
 }
+
+/* ---- small grey notes and post dates ---- */
+
+.note,
+.meta {
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* ---- blog post list ---- */
+
+.posts li {
+  list-style: none;
+}
+
+.posts {
+  padding-left: 0;
+}
+
+/* ---- code inside blog posts ---- */
+
+code {
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  background: #f0eee9;
+  padding: 1px 4px;
+}
